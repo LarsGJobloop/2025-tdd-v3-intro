@@ -2,29 +2,14 @@
 
 public class Add
 {
-    [Fact]
-    public void TwoAndTwoShouldResultInFour()
+    [Theory]
+    [InlineData(2, 2, 4)]
+    [InlineData(0, 2, 2)]
+    [InlineData(2, 20, 22)]
+    public void AddsAllEntriesCorrectly(int a, int b, int expected)
     {
         // Arrange
         var calculator = new Calculator();
-        int a = 2;
-        int b = 2;
-        int expected = 4;
-
-        // Act
-        var result = calculator.Add(a, b);
-
-        // Assert
-        Assert.Equal(expected, result);
-    }
-    [Fact]
-    public void ThreeAndThreeShouldResultInSix()
-    {
-        // Arrange
-        var calculator = new Calculator();
-        int a = 3;
-        int b = 3;
-        int expected = 6;
 
         // Act
         var result = calculator.Add(a, b);
