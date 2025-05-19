@@ -6,3 +6,7 @@
 4. `dotnet sln add Calculator.Tests`: Add to Solution
 5. `dotnet add Calculator.Tests reference Calculator`: Link in depencies
 6. `dotnet test`: Verify that everything works
+
+## Sketches
+
+![sketches](/docs/2025-tdd-v3.png)
