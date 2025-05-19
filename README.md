@@ -10,3 +10,11 @@
 ## Sketches
 
 ![sketches](/docs/2025-tdd-v3.png)
+
+## Nix files
+
+You can safely ignore the following file as they are only relevant for Nix users.
+
+-  `flake.nix`
+-  `flake.lock`
+-  `.envrc`
