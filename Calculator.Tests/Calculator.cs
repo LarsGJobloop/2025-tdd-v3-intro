@@ -17,4 +17,16 @@ public class Add
         // Assert
         Assert.Equal(expected, result);
     }
+
+    [Theory]
+    [InlineData(int.MaxValue, 1)]
+    [InlineData(1, int.MaxValue)]
+    public void AddingMaxShouldShouldThrow(int a, int b)
+    {
+        // Arrange
+        var calculator = new Calculator();
+
+        // Act & Assert
+        Assert.Throws<Exception>(() => calculator.Add(a, b));
+    }
 }
