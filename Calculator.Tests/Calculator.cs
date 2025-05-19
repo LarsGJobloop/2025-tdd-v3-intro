@@ -17,4 +17,19 @@ public class Add
         // Assert
         Assert.Equal(expected, result);
     }
+    [Fact]
+    public void ThreeAndThreeShouldResultInSix()
+    {
+        // Arrange
+        var calculator = new Calculator();
+        int a = 3;
+        int b = 3;
+        int expected = 6;
+
+        // Act
+        var result = calculator.Add(a, b);
+
+        // Assert
+        Assert.Equal(expected, result);
+    }
 }
